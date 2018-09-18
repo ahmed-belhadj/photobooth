@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photobooth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" async></script>
+</head>
+
+<body>
+
+    <div class="photobooth">
+        <div class="controls">
+            <button onClick="takePhoto()">Take Photo</button>
+            <div class="rgb">
+                <label for="redMin">Red Min:</label>
+                <input type="range" min=0 max=255 name="redMin">
+                <label for="redMax">Red Max:</label>
+                <input type="range" min=0 max=255 name="redMax">
+
+                <br>
+
+                <label for="greenMin">Green Min:</label>
+                <input type="range" min=0 max=255 name="greenMin">
+                <label for="greenMax">Green Max:</label>
+                <input type="range" min=0 max=255 name="greenMax">
+
+                <br>
+
+                <label for="blueMin">Blue Min:</label>
+                <input type="range" min=0 max=255 name="blueMin">
+                <label for="blueMax">Blue Max:</label>
+                <input type="range" min=0 max=255 name="blueMax">
+            </div>
+        </div>
+
+        <canvas class="photo"></canvas>
+        <video class="player"></video>
+        <div class="photos"></div>
+    </div>
+
+    <audio class="snap" src="./assets/audio/snap.mp3" hidden></audio>
+
+
+</body>
+
+</html>
